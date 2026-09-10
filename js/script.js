@@ -34,8 +34,8 @@ const translations = {
       name: "ЛИПИХИН<br />СЕМЁН АЛЕКСЕЕВИЧ",
       role: "FULL-STACK DEVELOPER",
       text: "Создаю веб-продукты, которые решают бизнес-задачи, улучшают пользовательский опыт и масштабируются вместе с командой.",
-      buttonPrimary: "ПОСМОТРЕТЬ НАВЫКИ ↗",
-      buttonSecondary: "СВЯЗАТЬСЯ ↗",
+      buttonPrimary: "ПОСМОТРЕТЬ НАВЫКИ",
+      buttonSecondary: "СВЯЗАТЬСЯ",
       tags: "WEB · PRODUCT · CODE",
     },
     about: {
@@ -58,7 +58,7 @@ const translations = {
     },
     projects: {
       index: "04 / ПРОЕКТЫ",
-      title: "Selected Work",
+      title: "Мои проекты",
       subtitle:
         "В портфолио добавляю решения, которые показывают мой подход к продукту, качеству кода и работе в команде.",
       card1: {
@@ -105,8 +105,8 @@ const translations = {
       name: "Lipikhin<br />Semen Alekseevich",
       role: "FULL-STACK DEVELOPER",
       text: "I build web products that solve business problems, improve user experience, and grow with the team.",
-      buttonPrimary: "VIEW SKILLS ↗",
-      buttonSecondary: "CONTACT ↗",
+      buttonPrimary: "VIEW SKILLS",
+      buttonSecondary: "CONTACT",
       tags: "WEB · PRODUCT · CODE",
     },
     about: {

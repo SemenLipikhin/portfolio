@@ -54,9 +54,14 @@
   gap: 18px;
   min-height: 300px;
   padding: 28px 24px 24px;
-  border: 1px solid var(--color-light-gray);
+  border: 1px solid rgba(17, 17, 17, 0.12);
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.12);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.18),
+    rgba(255, 255, 255, 0.08)
+  );
+  box-shadow: 0 10px 24px rgba(17, 17, 17, 0.03);
   transition:
     background-color 0.25s ease,
     transform 0.25s ease,
@@ -65,8 +70,12 @@
 }
 
 .projects__card:hover {
-  background: rgba(255, 255, 255, 0.3);
-  border-color: var(--color-accent);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.34),
+    rgba(255, 255, 255, 0.12)
+  );
+  border-color: rgba(182, 165, 138, 0.7);
   transform: translateY(-4px);
   box-shadow: 0 22px 38px rgba(17, 17, 17, 0.08);
 }
@@ -101,13 +110,12 @@
   position: absolute;
   top: 28px;
   right: 28px;
-  display: inline-grid;
-  place-items: center;
-  width: 20px;
-  height: 20px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg);
   transition:
     color 0.2s ease,
     transform 0.2s ease;
@@ -115,7 +123,7 @@
 
 .projects__card-link:hover {
   color: var(--color-accent);
-  transform: translate(2px, -2px);
+  transform: translate(2px, -2px) rotate(45deg);
 }
 
 @media (prefers-reduced-motion: no-preference) {
