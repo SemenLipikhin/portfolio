@@ -1,0 +1,15 @@
+/* ============================================
+   STYLE.CSS — только импорты, стили сюда не писать
+   ============================================ */
+
+@import url('base/reset.css');
+@import url('base/variables.css');
+@import url('base/base.css');
+
+@import url('blocks/header.css');
+@import url('blocks/hero.css');
+@import url('blocks/about.css');
+@import url('blocks/skills.css');
+@import url('blocks/projects.css');
+@import url('blocks/contact.css');
+@import url('blocks/footer.css');

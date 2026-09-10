@@ -1,0 +1,134 @@
+.contact {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+  column-gap: 80px;
+  padding: var(--section-padding-y) var(--grid-margin) 48px;
+  min-height: 520px;
+  background-color: var(--color-black);
+  color: var(--color-ivory);
+  border-top: 1px solid rgba(247, 245, 240, 0.18);
+}
+
+.contact__index,
+.contact__label {
+  color: var(--color-accent);
+  font-size: var(--fs-label);
+  font-weight: var(--fw-label);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.contact__index {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.contact__index::before {
+  content: "";
+  flex: 1;
+  max-width: 100px;
+  height: 1px;
+  background-color: rgba(247, 245, 240, 0.2);
+}
+
+.contact__index,
+.contact__title,
+.contact__text {
+  grid-column: 1;
+}
+
+.contact__title {
+  max-width: 680px;
+  margin: 44px 0 24px;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  letter-spacing: -0.03em;
+}
+
+.contact__text {
+  max-width: 540px;
+  color: var(--color-accent);
+}
+
+.contact__list {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  align-self: end;
+  display: grid;
+  gap: 28px;
+}
+
+.contact__label {
+  margin-bottom: 8px;
+}
+
+.contact__link {
+  position: relative;
+  font-size: var(--fs-body);
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+  font-weight: 500;
+}
+
+.contact__link::after {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  left: 0;
+  height: 1px;
+  background-color: var(--color-accent);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease;
+}
+
+.contact__link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.contact__link:hover,
+.header__nav-link:hover,
+.header__lang-switch:hover {
+  color: var(--color-accent);
+}
+
+.contact__link:hover {
+  transform: translateX(4px);
+}
+
+@media (max-width: 900px) {
+  .contact {
+    display: block;
+  }
+
+  .contact__title {
+    margin-top: 32px;
+    font-size: var(--fs-h2);
+    line-height: 1.05;
+  }
+
+  .contact__list {
+    margin-top: 56px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding-top: 80px;
+    padding-bottom: 32px;
+  }
+
+  .contact__title {
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+
+  .contact__list {
+    margin-top: 48px;
+    gap: 24px;
+  }
+}

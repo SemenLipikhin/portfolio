@@ -1,0 +1,70 @@
+:root {
+  --color-black: #111111;
+  --color-ivory: #f5f1ea;
+  --color-light-gray: #d9d1c3;
+  --color-accent: #b6a58a;
+  --color-warm-gray: #665d52;
+  --color-graphite: #2a2724;
+
+  --font-main: "Inter", "Segoe UI", Arial, sans-serif;
+  --font-heading: "Manrope", "Inter", "Segoe UI", sans-serif;
+
+  --fs-h1: 96px;
+  --lh-h1: 96px;
+  --fw-h1: 700;
+
+  --fs-h2: 60px;
+  --lh-h2: 64px;
+  --fw-h2: 700;
+
+  --fs-h3: 46px;
+  --lh-h3: 52px;
+  --fw-h3: 600;
+
+  --fs-h4: 28px;
+  --lh-h4: 34px;
+  --fw-h4: 600;
+
+  --fs-body: 18px;
+  --lh-body: 28px;
+  --fw-body: 400;
+
+  --fs-body-sm: 15px;
+  --lh-body-sm: 24px;
+
+  --fs-caption: 12px;
+  --lh-caption: 18px;
+
+  --fs-label: 11px;
+  --fw-label: 600;
+
+  --section-padding-y: clamp(88px, 9vw, 156px);
+  --grid-margin: clamp(24px, 9vw, 156px);
+  --grid-gutter: 20px;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --section-padding-y: 72px;
+    --grid-margin: 24px;
+    --fs-h1: 52px;
+    --lh-h1: 56px;
+    --fs-h2: 44px;
+    --lh-h2: 48px;
+    --fs-body: 17px;
+    --lh-body: 26px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  :root {
+    --section-padding-y: 88px;
+    --grid-margin: 48px;
+    --fs-h1: 72px;
+    --lh-h1: 76px;
+    --fs-h2: 54px;
+    --lh-h2: 58px;
+    --fs-body: 18px;
+    --lh-body: 28px;
+  }
+}

@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Full-stack разработчик Семён Липихин создаёт интерфейсы, API, базы данных и продукты, которые помогают бизнесу расти, автоматизировать процессы и улучшать пользовательский опыт."
+    />
+    <meta
+      name="keywords"
+      content="full-stack developer, веб-разработка, frontend, backend, портфолио, Семён Липихин, создание веб-продуктов"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Семён Липихин" />
+    <meta
+      property="og:title"
+      content="Семён Липихин | Full-stack разработчик"
+    />
+    <meta
+      property="og:description"
+      content="Создаю веб-продукты, интерфейсы, API и внутренние системы, которые поддерживают бизнес и улучшают пользовательский опыт."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <link rel="canonical" href="https://example.com/" />
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Семён Липихин",
+        "jobTitle": "Full-Stack Developer",
+        "url": "https://example.com/",
+        "email": "Semenlipikhin@mail.ru",
+        "sameAs": ["https://t.me/Liiin55", "https://github.com/SemenLipikhin"],
+        "knowsAbout": [
+          "Frontend development",
+          "Backend development",
+          "Web applications",
+          "Databases",
+          "UI design"
+        ]
+      }
+    </script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__logo">LIPIKHIN</p>
+      <nav class="header__nav" aria-label="Главное меню">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#about" class="header__nav-link" data-i18n="nav.about"
+              >ОБО МНЕ</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="#skills" class="header__nav-link" data-i18n="nav.skills"
+              >НАВЫКИ</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a
+              href="#projects"
+              class="header__nav-link"
+              data-i18n="nav.projects"
+              >ПРОЕКТЫ</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="#contact" class="header__nav-link" data-i18n="nav.contact"
+              >КОНТАКТЫ</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="header__lang-switch"
+        type="button"
+        aria-label="Переключить язык"
+        aria-pressed="false"
+      >
+        <span class="header__lang-switch-option is-active">RU</span>
+        <span class="header__lang-switch-divider">/</span>
+        <span class="header__lang-switch-option">EN</span>
+      </button>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <p class="hero__index" data-i18n="hero.index">01 / PORTFOLIO</p>
+        <h1 class="hero__name" data-i18n="hero.name">
+          ЛИПИХИН<br />СЕМЁН АЛЕКСЕЕВИЧ
+        </h1>
+        <p class="hero__role" data-i18n="hero.role">FULL-STACK DEVELOPER</p>
+        <p class="hero__text" data-i18n="hero.text">
+          Создаю веб-продукты, которые решают бизнес-задачи, улучшают
+          пользовательский опыт и растут вместе с командой.
+        </p>
+        <div class="hero__actions">
+          <a href="#skills" class="hero__button" data-i18n="hero.buttonPrimary"
+            >ПОСМОТРЕТЬ КОМПЕТЕНЦИИ ↗</a
+          >
+          <a
+            href="#contact"
+            class="hero__button hero__button--glass"
+            data-i18n="hero.buttonSecondary"
+            >СВЯЗАТЬСЯ ↗</a
+          >
+        </div>
+        <p class="hero__tags" data-i18n="hero.tags">WEB · CODE · PRODUCT</p>
+      </section>
+
+      <section id="about" class="about">
+        <p class="about__index" data-i18n="about.index">02 / ОБО МНЕ</p>
+        <h2 class="about__title" data-i18n="about.title">
+          Создаю цифровые продукты, которые приносят реальную пользу
+        </h2>
+        <p class="about__text" data-i18n="about.text">
+          Full-stack разработчик, который помогает компаниям превращать идеи в
+          работающие веб-продукты: понятный интерфейс, надёжная архитектура,
+          API, базы данных и решение под реальные задачи бизнеса.
+        </p>
+        <div class="about__meta">
+          <div class="about__meta-item">
+            <p class="about__meta-label" data-i18n="about.metaFocusLabel">
+              ФОКУС
+            </p>
+            <p class="about__meta-value" data-i18n="about.metaFocusValue">
+              Product thinking · UI · API · Database
+            </p>
+          </div>
+          <div class="about__meta-item">
+            <p class="about__meta-label" data-i18n="about.metaApproachLabel">
+              ПОДХОД
+            </p>
+            <p class="about__meta-value" data-i18n="about.metaApproachValue">
+              С пользой для бизнеса · чистый код · понятная логика
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <p class="skills__index" data-i18n="skills.index">03 / НАВЫКИ</p>
+        <h2 class="skills__title" data-i18n="skills.title">
+          Технологии, с которыми работаю
+        </h2>
+
+        <div class="skills__grid">
+          <details class="skills__category" open>
+            <summary class="skills__category-title" data-i18n="skills.frontend">
+              FRONTEND
+            </summary>
+            <ul class="skills__list">
+              <li class="skills__item">HTML</li>
+              <li class="skills__item">CSS</li>
+              <li class="skills__item">JavaScript</li>
+              <li class="skills__item">TypeScript</li>
+              <li class="skills__item">React</li>
+              <li class="skills__item">Next.js</li>
+            </ul>
+          </details>
+
+          <details class="skills__category" open>
+            <summary class="skills__category-title" data-i18n="skills.backend">
+              BACKEND
+            </summary>
+            <ul class="skills__list">
+              <li class="skills__item">Node.js</li>
+              <li class="skills__item">PHP</li>
+              <li class="skills__item">REST API</li>
+            </ul>
+          </details>
+
+          <details class="skills__category" open>
+            <summary class="skills__category-title" data-i18n="skills.database">
+              DATABASE
+            </summary>
+            <ul class="skills__list">
+              <li class="skills__item">SQL</li>
+              <li class="skills__item">PostgreSQL</li>
+            </ul>
+          </details>
+
+          <details class="skills__category" open>
+            <summary class="skills__category-title" data-i18n="skills.tools">
+              TOOLS
+            </summary>
+            <ul class="skills__list">
+              <li class="skills__item">Git</li>
+              <li class="skills__item">Docker</li>
+              <li class="skills__item">Figma</li>
+              <li class="skills__item">CI / CD</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <p class="projects__index" data-i18n="projects.index">04 / ПРОЕКТЫ</p>
+        <h2 class="projects__title" data-i18n="projects.title">
+          Selected Work
+        </h2>
+        <p class="projects__subtitle" data-i18n="projects.subtitle">
+          В портфолио добавляю решения, которые показывают мой подход к
+          продукту, качеству кода и работе в команде.
+        </p>
+
+        <div class="projects__list">
+          <article class="projects__card">
+            <p class="projects__card-number">01</p>
+            <p class="projects__card-status" data-i18n="projects.card1.status">
+              ПРОЕКТ В РАЗРАБОТКЕ
+            </p>
+            <p class="projects__card-desc" data-i18n="projects.card1.desc">
+              Готовлю первый коммерчески ориентированный проект с акцентом на
+              UX, архитектуру и скорость.
+            </p>
+            <p class="projects__card-tags">React · TypeScript · Node.js</p>
+            <span class="projects__card-link" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="projects__card">
+            <p class="projects__card-number">02</p>
+            <p class="projects__card-status" data-i18n="projects.card2.status">
+              ПРИМЕР РАБОТЫ
+            </p>
+            <p class="projects__card-desc" data-i18n="projects.card2.desc">
+              Дальнейшие проекты будут показывать процесс, дизайн-решения и
+              бизнес-логику.
+            </p>
+            <p class="projects__card-tags">HTML · CSS · JavaScript</p>
+            <span class="projects__card-link" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="projects__card">
+            <p class="projects__card-number">03</p>
+            <p class="projects__card-status" data-i18n="projects.card3.status">
+              КОММЕРЧЕСКИЙ КЕЙС
+            </p>
+            <p class="projects__card-desc" data-i18n="projects.card3.desc">
+              Планирую добавлять задачи, где важны интерфейс, качество кода и
+              эффективность продукта.
+            </p>
+            <p class="projects__card-tags">PHP · PostgreSQL · REST API</p>
+            <span class="projects__card-link" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <p class="contact__index" data-i18n="contact.index">05 / КОНТАКТЫ</p>
+        <h2 class="contact__title" data-i18n="contact.title">
+          Готов обсуждать задачи, в которых смогу принести реальную пользу
+        </h2>
+        <p class="contact__text" data-i18n="contact.text">
+          Открыт к стажировкам, проектной работе и ролям в web-разработке, где
+          важны качество, ответственность и результат.
+        </p>
+
+        <ul class="contact__list">
+          <li class="contact__item">
+            <p class="contact__label">EMAIL</p>
+            <a class="contact__link" href="mailto:Semenlipikhin@mail.ru"
+              >Semenlipikhin@mail.ru</a
+            >
+          </li>
+          <li class="contact__item">
+            <p class="contact__label">TELEGRAM</p>
+            <a class="contact__link" href="https://t.me/Liiin55">@Liiin55</a>
+          </li>
+          <li class="contact__item">
+            <p class="contact__label">GITHUB</p>
+            <a class="contact__link" href="https://github.com/SemenLipikhin"
+              >github.com/SemenLipikhin</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright" data-i18n="footer.copyright">
+        © 2026 CЕМËН ЛИПИХИН
+      </p>
+      <p class="footer__role" data-i18n="footer.role">FULL-STACK DEVELOPER</p>
+    </footer>
+  </body>
+</html>
