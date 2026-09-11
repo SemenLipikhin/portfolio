@@ -87,10 +87,10 @@ const translations = {
   en: {
     siteTitle: "Portfolio",
     description:
-      "Full-stack developer Lipikhin Semen Alekseevich creates interfaces, APIs, databases, and digital products that help businesses grow, automate processes, and improve user experience.",
+      "Full-stack developer LIPIKHIN SEMEN ALEKSEEVICH creates interfaces, APIs, databases, and digital products that help businesses grow, automate processes, and improve user experience.",
     keywords:
-      "full-stack developer, web development, frontend, backend, portfolio, Lipikhin Semen Alekseevich, digital products",
-    ogTitle: "Lipikhin Semen Alekseevich | Full-stack developer",
+      "full-stack developer, web development, frontend, backend, portfolio, LIPIKHIN SEMEN ALEKSEEVICH, digital products",
+    ogTitle: "LIPIKHIN SEMEN ALEKSEEVICH | Full-stack developer",
     ogDescription:
       "I build digital products, interfaces, APIs, and solutions that support business goals and improve user experience.",
     canonical: "https://example.com/",
@@ -102,7 +102,7 @@ const translations = {
     },
     hero: {
       index: "01 / PORTFOLIO",
-      name: "Lipikhin<br />Semen Alekseevich",
+      name: "LIPIKHIN<br />SEMEN ALEKSEEVICH",
       role: "FULL-STACK DEVELOPER",
       text: "I build web products that solve business problems, improve user experience, and grow with the team.",
       buttonPrimary: "VIEW SKILLS",
