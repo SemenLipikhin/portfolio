@@ -69,6 +69,11 @@ const translations = {
         status: "БУДУЩИЙ ПРИМЕР РАБОТЫ",
         desc: "Следующие проекты будут демонстрировать процесс, design-решения и продуктовую логику.",
       },
+      card4: {
+        status: "LIPIKHIN / МАГАЗИН ОДЕЖДЫ",
+        desc: "Адаптивная главная страница магазина одежды на React и Vite. Каталог, корзина и оформление заказа — в разработке.",
+        cta: "Открыть сайт ↗",
+      },
       card3: {
         status: "КОММЕРЧЕСКИЙ КЕЙС",
         desc: "Планирую добавлять задачи, где важно качество интерфейса, backend и пользовательский результат.",
@@ -138,6 +143,11 @@ const translations = {
       card2: {
         status: "FUTURE WORK SAMPLE",
         desc: "Upcoming projects will demonstrate the process, design decisions, and product logic.",
+      },
+      card4: {
+        status: "LIPIKHIN / CLOTHING STORE",
+        desc: "A responsive clothing store homepage built with React and Vite. Catalog, cart, and checkout are in development.",
+        cta: "Visit website ↗",
       },
       card3: {
         status: "COMMERCIAL CASE",

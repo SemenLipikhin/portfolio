@@ -198,3 +198,16 @@
     margin-top: 4px;
   }
 }
+
+/* Published project link */
+.projects__card-cta {
+  font-size: var(--fs-body-sm);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+a.projects__card:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 5px;
+}
