@@ -1,16 +1,17 @@
 :root {
-  --color-black: #111111;
-  --color-ivory: #f5f1ea;
-  --color-light-gray: #d9d1c3;
-  --color-accent: #b6a58a;
-  --color-warm-gray: #665d52;
-  --color-graphite: #2a2724;
+  --color-dark: #17191c;
+  --color-surface: #f4f5f7;
+  --color-border: #d7dce3;
+  --color-accent: #647fa3;
+  --color-muted: #566171;
+  --color-surface-alt: #e9edf2;
+  --color-accent-light: #90acd0;
 
   --font-main: "Inter", "Segoe UI", Arial, sans-serif;
-  --font-heading: "Manrope", "Inter", "Segoe UI", sans-serif;
+  --font-heading: var(--font-main);
 
-  --fs-h1: 96px;
-  --lh-h1: 96px;
+  --fs-h1: clamp(64px, 7vw, 96px);
+  --lh-h1: 1.05;
   --fw-h1: 700;
 
   --fs-h2: 60px;
@@ -47,10 +48,10 @@
   :root {
     --section-padding-y: 72px;
     --grid-margin: 24px;
-    --fs-h1: 52px;
-    --lh-h1: 56px;
-    --fs-h2: 44px;
-    --lh-h2: 48px;
+    --fs-h1: clamp(30px, 8.2vw, 49px);
+    --lh-h1: 1.1;
+    --fs-h2: clamp(30px, 8vw, 44px);
+    --lh-h2: 1.12;
     --fs-body: 17px;
     --lh-body: 26px;
   }
@@ -60,8 +61,8 @@
   :root {
     --section-padding-y: 88px;
     --grid-margin: 48px;
-    --fs-h1: 72px;
-    --lh-h1: 76px;
+    --fs-h1: clamp(48px, 7.3vw, 66px);
+    --lh-h1: 1.08;
     --fs-h2: 54px;
     --lh-h2: 58px;
     --fs-body: 18px;

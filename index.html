@@ -23,22 +23,31 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ru_RU" />
-    <link rel="canonical" href="https://example.com/" />
-    <title>Портфолио</title>
+    <link rel="canonical" href="https://semenlipikhin.github.io/portfolio/" />
+    <title>Семён Липихин | Full-stack разработчик</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/base/reset.css?v=3" />
+<link rel="stylesheet" href="css/base/variables.css?v=3" />
+<link rel="stylesheet" href="css/base/base.css?v=4" />
+<link rel="stylesheet" href="css/blocks/header.css?v=4" />
+<link rel="stylesheet" href="css/blocks/hero.css?v=3" />
+<link rel="stylesheet" href="css/blocks/about.css?v=3" />
+<link rel="stylesheet" href="css/blocks/skills.css?v=3" />
+<link rel="stylesheet" href="css/blocks/projects.css?v=3" />
+<link rel="stylesheet" href="css/blocks/contact.css?v=3" />
+<link rel="stylesheet" href="css/blocks/footer.css?v=3" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Семён Липихин",
         "jobTitle": "Full-Stack Developer",
-        "url": "https://example.com/",
+        "url": "https://semenlipikhin.github.io/portfolio/",
         "email": "Semenlipikhin@mail.ru",
         "sameAs": ["https://t.me/Liiin55", "https://github.com/SemenLipikhin"],
         "knowsAbout": [
@@ -50,7 +59,7 @@
         ]
       }
     </script>
-    <script src="js/script.js" defer></script>
+    <script src="js/script.js?v=3" defer></script>
   </head>
   <body>
     <header class="header">
@@ -214,8 +223,16 @@
         </p>
 
         <div class="projects__list">
-          <article class="projects__card">
+          <a class="projects__card" href="https://semenlipikhin.github.io/lipikhin-store/" target="_blank" rel="noopener noreferrer">
             <p class="projects__card-number">01</p>
+            <p class="projects__card-status" data-i18n="projects.card4.status">LIPIKHIN / МАГАЗИН ОДЕЖДЫ</p>
+            <p class="projects__card-desc" data-i18n="projects.card4.desc">Адаптивная главная страница магазина одежды на React и Vite.</p>
+            <p class="projects__card-tags">React · Vite · CSS · GitHub Pages</p>
+            <span class="projects__card-cta" data-i18n="projects.card4.cta">Открыть сайт</span>
+          </a>
+
+          <article class="projects__card">
+            <p class="projects__card-number">02</p>
             <p class="projects__card-status" data-i18n="projects.card1.status">
               ПРОЕКТ В РАЗРАБОТКЕ
             </p>
@@ -224,11 +241,10 @@
               UX, архитектуру и скорость.
             </p>
             <p class="projects__card-tags">React · TypeScript · Node.js</p>
-            <span class="projects__card-link" aria-hidden="true"></span>
           </article>
 
           <article class="projects__card">
-            <p class="projects__card-number">02</p>
+            <p class="projects__card-number">03</p>
             <p class="projects__card-status" data-i18n="projects.card2.status">
               ПРИМЕР РАБОТЫ
             </p>
@@ -237,11 +253,10 @@
               бизнес-логику.
             </p>
             <p class="projects__card-tags">HTML · CSS · JavaScript</p>
-            <span class="projects__card-link" aria-hidden="true"></span>
           </article>
 
           <article class="projects__card">
-            <p class="projects__card-number">03</p>
+            <p class="projects__card-number">04</p>
             <p class="projects__card-status" data-i18n="projects.card3.status">
               КОММЕРЧЕСКИЙ КЕЙС
             </p>
@@ -250,17 +265,7 @@
               эффективность продукта.
             </p>
             <p class="projects__card-tags">PHP · PostgreSQL · REST API</p>
-            <span class="projects__card-link" aria-hidden="true"></span>
           </article>
-
-          <a class="projects__card" href="https://semenlipikhin.github.io/lipikhin-store/" target="_blank" rel="noopener noreferrer">
-            <p class="projects__card-number">04</p>
-            <p class="projects__card-status" data-i18n="projects.card4.status">LIPIKHIN / МАГАЗИН ОДЕЖДЫ</p>
-            <p class="projects__card-desc" data-i18n="projects.card4.desc">Адаптивная главная страница магазина одежды на React и Vite. Каталог, корзина и оформление заказа — в разработке.</p>
-            <p class="projects__card-tags">React · Vite · CSS · GitHub Pages</p>
-            <span class="projects__card-cta" data-i18n="projects.card4.cta">Открыть сайт ↗</span>
-            <span class="projects__card-link" aria-hidden="true"></span>
-          </a>
         </div>
       </section>
 

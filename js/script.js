@@ -1,20 +1,12 @@
-const root = document.documentElement;
-
-root.classList.add("js");
-
 const languageButton = document.querySelector(".header__lang-switch");
 const langOptions = document.querySelectorAll(".header__lang-switch-option");
 const i18nNodes = document.querySelectorAll("[data-i18n]");
-const revealTargets = document.querySelectorAll(
-  "main > section:not(.hero), .projects__card",
-);
 const skillCategories = document.querySelectorAll(".skills__category");
 const mobileSkillsQuery = window.matchMedia("(max-width: 600px)");
-const header = document.querySelector(".header");
 
 const translations = {
   ru: {
-    siteTitle: "Портфолио",
+    siteTitle: "Семён Липихин | Full-stack разработчик",
     description:
       "Full-stack разработчик ЛИПИХИН СЕМЁН АЛЕКСЕЕВИЧ создаёт интерфейсы, API, базы данных и digital-продукты, которые помогают бизнесу расти и автоматизировать процессы.",
     keywords:
@@ -22,7 +14,7 @@ const translations = {
     ogTitle: "ЛИПИХИН СЕМЁН АЛЕКСЕЕВИЧ | Full-stack разработчик",
     ogDescription:
       "Создаю веб-продукты, интерфейсы, API и внутренние системы, которые поддерживают бизнес и улучшают пользовательский опыт.",
-    canonical: "https://example.com/",
+    canonical: "https://semenlipikhin.github.io/portfolio/",
     nav: {
       about: "ОБО МНЕ",
       skills: "НАВЫКИ",
@@ -71,8 +63,8 @@ const translations = {
       },
       card4: {
         status: "LIPIKHIN / МАГАЗИН ОДЕЖДЫ",
-        desc: "Адаптивная главная страница магазина одежды на React и Vite. Каталог, корзина и оформление заказа — в разработке.",
-        cta: "Открыть сайт ↗",
+        desc: "Адаптивная главная страница магазина одежды на React и Vite.",
+        cta: "Открыть сайт",
       },
       card3: {
         status: "КОММЕРЧЕСКИЙ КЕЙС",
@@ -90,7 +82,7 @@ const translations = {
     },
   },
   en: {
-    siteTitle: "Portfolio",
+    siteTitle: "Semen Lipikhin | Full-stack Developer",
     description:
       "Full-stack developer LIPIKHIN SEMEN ALEKSEEVICH creates interfaces, APIs, databases, and digital products that help businesses grow, automate processes, and improve user experience.",
     keywords:
@@ -98,7 +90,7 @@ const translations = {
     ogTitle: "LIPIKHIN SEMEN ALEKSEEVICH | Full-stack developer",
     ogDescription:
       "I build digital products, interfaces, APIs, and solutions that support business goals and improve user experience.",
-    canonical: "https://example.com/",
+    canonical: "https://semenlipikhin.github.io/portfolio/",
     nav: {
       about: "ABOUT",
       skills: "SKILLS",
@@ -146,8 +138,8 @@ const translations = {
       },
       card4: {
         status: "LIPIKHIN / CLOTHING STORE",
-        desc: "A responsive clothing store homepage built with React and Vite. Catalog, cart, and checkout are in development.",
-        cta: "Visit website ↗",
+        desc: "A responsive clothing store homepage built with React and Vite.",
+        cta: "Visit website",
       },
       card3: {
         status: "COMMERCIAL CASE",
@@ -233,9 +225,6 @@ const savedLanguage = (() => {
   }
 })();
 
-let previousScrollY = window.scrollY;
-let headerFrame = 0;
-
 const syncSkillCategories = () => {
   skillCategories.forEach((category) => {
     if (mobileSkillsQuery.matches) {
@@ -257,37 +246,6 @@ if (skillCategories.length) {
   }
 }
 
-const updateHeader = () => {
-  if (!header) {
-    return;
-  }
-
-  const currentScrollY = window.scrollY;
-
-  if (currentScrollY <= 24 || currentScrollY < previousScrollY - 4) {
-    header.classList.remove("header--hidden");
-  } else if (currentScrollY > previousScrollY + 4) {
-    header.classList.add("header--hidden");
-  }
-
-  previousScrollY = currentScrollY;
-};
-
-const handleHeaderScroll = () => {
-  if (!header || headerFrame) {
-    return;
-  }
-
-  headerFrame = window.requestAnimationFrame(() => {
-    headerFrame = 0;
-    updateHeader();
-  });
-};
-
-if (header) {
-  window.addEventListener("scroll", handleHeaderScroll, { passive: true });
-}
-
 if (languageButton) {
   languageButton.addEventListener("click", () => {
     const nextLanguage = document.documentElement.lang === "ru" ? "en" : "ru";
@@ -303,64 +261,3 @@ if (languageButton) {
 }
 
 updateLanguage(savedLanguage);
-
-if (revealTargets.length) {
-  if ("IntersectionObserver" in window) {
-    const revealVisibleTargets = () => {
-      revealTargets.forEach((element) => {
-        const bounds = element.getBoundingClientRect();
-
-        if (bounds.top < window.innerHeight * 1.15 && bounds.bottom > -80) {
-          element.classList.add("is-visible");
-        }
-      });
-    };
-
-    const revealObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return;
-          }
-
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
-        });
-      },
-      {
-        threshold: 0.12,
-        rootMargin: "0px 0px -8% 0px",
-      },
-    );
-
-    revealTargets.forEach((element, index) => {
-      element.classList.add("scroll-reveal");
-
-      if (element.classList.contains("projects__card")) {
-        element.style.setProperty("--reveal-delay", `${(index % 3) * 70}ms`);
-      }
-
-      revealObserver.observe(element);
-    });
-
-    let scrollFrame = 0;
-
-    const handleScroll = () => {
-      if (scrollFrame) {
-        return;
-      }
-
-      scrollFrame = window.requestAnimationFrame(() => {
-        scrollFrame = 0;
-        revealVisibleTargets();
-      });
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    revealVisibleTargets();
-  } else {
-    revealTargets.forEach((element) => {
-      element.classList.add("scroll-reveal", "is-visible");
-    });
-  }
-}

@@ -7,10 +7,10 @@ body {
   font-size: var(--fs-body);
   line-height: var(--lh-body);
   font-weight: var(--fw-body);
-  color: var(--color-black);
+  color: var(--color-dark);
   background:
-    radial-gradient(circle at top, rgba(182, 165, 138, 0.1), transparent 28%),
-    var(--color-ivory);
+    radial-gradient(circle at top, rgba(100, 127, 163, 0.1), transparent 28%),
+    var(--color-surface);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -46,7 +46,7 @@ html {
 
 ::selection {
   background-color: var(--color-accent);
-  color: var(--color-black);
+  color: var(--color-dark);
 }
 
 h1,
@@ -75,7 +75,7 @@ button {
   cursor: pointer;
 }
 
-:is(a, button):focus-visible {
+:is(a, button, summary):focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 5px;
 }
@@ -90,24 +90,8 @@ button {
     transition-duration: 0.01ms !important;
   }
 
-  .js .scroll-reveal,
-  .js .scroll-reveal.is-visible {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
 }
 
-.js .scroll-reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition:
-    opacity 0.7s ease,
-    transform 0.7s ease;
-  transition-delay: var(--reveal-delay, 0ms);
-}
-
-.js .scroll-reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+main > section { min-width: 0; }
+.contact__link { overflow-wrap: anywhere; }
+@media (max-width: 600px) { html { scroll-padding-top: 150px; } }

@@ -3,9 +3,9 @@
   justify-content: space-between;
   gap: 24px;
   padding: 20px var(--grid-margin) 24px;
-  border-top: 1px solid rgba(247, 245, 240, 0.18);
-  background-color: var(--color-black);
-  color: var(--color-accent);
+  border-top: 1px solid rgba(244, 245, 247, 0.18);
+  background-color: var(--color-dark);
+  color: var(--color-accent-light);
   font-size: var(--fs-label);
   letter-spacing: 0.08em;
   text-transform: uppercase;

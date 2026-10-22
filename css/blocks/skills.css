@@ -1,8 +1,8 @@
 .skills {
   padding: var(--section-padding-y) var(--grid-margin);
-  background-color: #ebe9e3;
-  color: var(--color-black);
-  border-top: 1px solid var(--color-light-gray);
+  background-color: var(--color-surface-alt);
+  color: var(--color-dark);
+  border-top: 1px solid var(--color-border);
 }
 
 .skills__index {
@@ -13,7 +13,7 @@
   font-weight: var(--fw-label);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--color-warm-gray);
+  color: var(--color-muted);
   margin-bottom: 24px;
 }
 
@@ -22,7 +22,7 @@
   flex: 1;
   max-width: 100px;
   height: 1px;
-  background-color: var(--color-light-gray);
+  background-color: var(--color-border);
 }
 
 .skills__title {
@@ -46,34 +46,18 @@
   font-weight: var(--fw-label);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--color-warm-gray);
+  color: var(--color-muted);
   margin-bottom: 20px;
-  cursor: default;
+  cursor: pointer;
+  min-height: 44px;
   list-style: none;
   transition: color 0.2s ease;
 }
 
 .skills__category-title:hover {
-  color: var(--color-black);
+  color: var(--color-dark);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .skills__category[open] .skills__list {
-    animation: skills-open 0.3s ease both;
-  }
-}
-
-@keyframes skills-open {
-  from {
-    opacity: 0;
-    transform: translateY(-6px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .skills__category-title::-webkit-details-marker {
   display: none;
@@ -87,7 +71,7 @@
 
 .skills__item {
   padding: 8px 0;
-  border-bottom: 1px solid var(--color-light-gray);
+  border-bottom: 1px solid var(--color-border);
   font-size: var(--fs-body-sm);
   line-height: var(--lh-body-sm);
 }
@@ -115,11 +99,11 @@
   }
 
   .skills__category {
-    border-bottom: 1px solid var(--color-light-gray);
+    border-bottom: 1px solid var(--color-border);
   }
 
   .skills__category:first-child {
-    border-top: 1px solid var(--color-light-gray);
+    border-top: 1px solid var(--color-border);
   }
 
   .skills__category-title {
@@ -133,7 +117,7 @@
     position: absolute;
     top: 50%;
     right: 4px;
-    color: var(--color-black);
+    color: var(--color-dark);
     content: "+";
     font-size: 20px;
     font-weight: 400;
